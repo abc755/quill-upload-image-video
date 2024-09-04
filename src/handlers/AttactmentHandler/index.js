@@ -19,7 +19,7 @@ class AttachmentHandler extends BaseHandler {
       el.classList.remove(Constants.QUILL_UPLOAD_HOLDER_CLASS_NAME);
 
       if (url) {
-        const _filename = url?.split("/").pop();
+        const _filename = url.split("/").pop();
 
         if (_filename && el.firstElementChild) {
           el.firstElementChild.setAttribute("href", url);

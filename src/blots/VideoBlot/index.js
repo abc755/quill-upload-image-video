@@ -27,6 +27,7 @@ class VideoBlot extends BlockEmbed {
     // Set non-format related attributes with static values
     node.setAttribute("frameborder", "0");
     node.setAttribute("allowfullscreen", true);
+    node.setAttribute("sandbox", "allow-scripts");
 
     return node;
   }
@@ -63,6 +64,7 @@ class VideoBlot extends BlockEmbed {
 
 VideoBlot.tagName = "iframe";
 VideoBlot.blotName = Constants.blots.video;
-VideoBlot.className = Constants.QUILL_UPLOAD_HOLDER_CLASS_NAME;
+// VideoBlot.className = Constants.QUILL_UPLOAD_HOLDER_CLASS_NAME;
+VideoBlot.className = "quill-video-iframe";
 
 export default VideoBlot;

@@ -34,7 +34,7 @@ class BaseHandler {
       const _element = _elements[0];
       if (!_element) return;
 
-      if (_element?.children.length <= 0) _elements[0].appendChild(node);
+      if (_element.children.length <= 0) _elements[0].appendChild(node);
     }
   }
 
